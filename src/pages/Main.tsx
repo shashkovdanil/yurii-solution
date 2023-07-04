@@ -1,5 +1,6 @@
 import { Button } from '../components/Button'
 import { Link } from '../components/Link'
+import { RadioGroup } from '../components/RadioGroup'
 
 import phone from '../assets/phone.svg'
 import cart from '../assets/cart.svg'
@@ -29,6 +30,12 @@ export function Main() {
       >
         Cart
       </Link>
+      <RadioGroup
+        group={[
+          { id: '1', label: 'Test 1', value: '1' },
+          { id: '2', label: 'Test 2', value: '2' },
+        ]}
+      />
     </div>
   )
 }
